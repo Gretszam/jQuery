@@ -1,4 +1,28 @@
-let levelButton = document.getElementById("levelUp");
+
+$(document).ready(() => {
+    //everything jQuery goes in here
+    let $levelButton = $("#levelTrigger");
+
+    $levelButton.on({
+        click: () => {
+            //im thinking the dice roll function'll prob go here and also maybe show a display of previous health max to current health max?
+        }
+    })
+    $(window).load(function () {
+        $("#levelTrigger").click(function () {
+            $('.hoverBkgr').show();
+        });
+        $('.hoverBkgr').click(function () {
+            $('.hoverBkgr').hide();
+        });
+        $('.popupClose').click(function () {
+            $('.hoverBkgr').hide();
+        });
+    });
+
+});
+
+let levelButton = document.getElementById("levelTrigger");
 levelButton.addEventListener("click", () => {
     rollDice();
 })
