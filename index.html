@@ -2,29 +2,32 @@
 
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-    <a id="popup_trigger">Level Up</a>
-
-    <input type="text" id="textbox">
-
-    <div class="hover_bkgr">
-        <span class="helper"></span>
-        <div>
-            <div class="popup_close">&times;</div>
-            <p id = "dice">health to add to max</p>
-        </div>
+    <select name="races" multiple="multiple">
+        <option>Dwarf</option>
+        <option>Elf</option>
+        <option>Halfling</option>
+        <option>Human</option>
+        <option>Dragonborn</option>
+        <option>Gnome</option>
+        <option>Half-Elf</option>
+        <option>Half-Orc</option>
+        <option>Tiefling</option>
+    </select>
+    <div id="div"> </div>
+    <div id="link">
+        <a href="https://www.dndbeyond.com/races">About</a>
     </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <p><strong>Features &amp; Traits</strong></p>
+    <input type="text" id="text1">
+    <p><strong>Equipment</strong></p>
+    <input type="text">
+    <div id="off"></div>
 
     <script src="function.js"></script>
-
-
 </body>
 
 </html>
