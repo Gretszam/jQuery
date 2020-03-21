@@ -1,4 +1,4 @@
-.hoverBkgr{
+.hoverBkgr {
     background:rgba(0,0,0,.4);
     cursor:pointer;
     display:none;
@@ -9,13 +9,13 @@
     width:100%;
     z-index:10000;
 }
-.hoverBkgr .helper{
+.hoverBkgr .helper {
     display:inline-block;
     height:100%;
     vertical-align:middle;
 }
 .hoverBkgr > div {
-    background-color: #fff;
+    background-color: darkorchid;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
@@ -50,7 +50,7 @@
 #popupTrigger {
     cursor: pointer;
     font-size: 20px;
-    margin: 20px;
+    margin: 5px;
     display: inline-block;
     font-weight: bold;
 }
