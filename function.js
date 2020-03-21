@@ -1,24 +1,20 @@
 // okay so what i want to do is for the user to be able to select how many "levels" they want to level up, which would tell the function how many dice to roll. Then it would display that number of dice on the popup
 $(document).ready(() => {
     //everything jQuery goes in here
-    let $levelButton = $("#levelTrigger");
-    let $popup = $(".hoverBkgr");
-    let $byeButton = $(".popupClose");
-
-    $levelButton.on({
-        click: () => {
-            $popup.show();
-        }
+    $(window).load(function () {
+        $("#popupTrigger").click(function () {
+            $('.hoverBkgr').show();
+        });
+        $('.hoverBkgr').click(function () {
+            $('.hoverBkgr').hide();
+        });
+        $('.popupClose').click(function () {
+            $('.hoverBkgr').hide();
+        });
     });
-    $byeButton.on({
-        click: () => {
-            $byeButton.hide();
-        }
-    });
-
 });
 //we somehow need to make the dice show up in the popup
-let levelButton = document.getElementById("levelTrigger");
+let levelButton = document.getElementById("popupTrigger");
 levelButton.addEventListener("click", () => {
     rollDice();
 })

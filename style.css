@@ -47,7 +47,7 @@
 .popupClose:hover {
     background-color: #ccc;
 }
-#levelTrigger {
+#popupTrigger {
     cursor: pointer;
     font-size: 20px;
     margin: 20px;
