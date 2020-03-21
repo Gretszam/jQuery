@@ -1,4 +1,4 @@
-.hoverBkgr {
+.hover_bkgr {
     background:rgba(0,0,0,.4);
     cursor:pointer;
     display:none;
@@ -9,12 +9,12 @@
     width:100%;
     z-index:10000;
 }
-.hoverBkgr .helper {
+.hover_bkgr .helper {
     display:inline-block;
     height:100%;
     vertical-align:middle;
 }
-.hoverBkgr > div {
+.hover_bkgr > div {
     background-color: darkorchid;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
@@ -27,7 +27,7 @@
     border-radius: 8px;
     padding: 15px 5%;
 }
-.popupClose {
+.popup_close {
     background-color: #fff;
     border: 3px solid #999;
     border-radius: 50px;
@@ -44,10 +44,10 @@
     height: 30px;
     text-align: center;
 }
-.popupClose:hover {
+.popup_close:hover {
     background-color: #ccc;
 }
-#popupTrigger {
+#popup_trigger {
     cursor: pointer;
     font-size: 20px;
     margin: 5px;
